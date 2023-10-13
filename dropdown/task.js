@@ -14,7 +14,8 @@ const changeValue = (event) => {
     dropdownElement
         .querySelector(".dropdown__list")
         .classList.remove("dropdown__list_active");
-    event.preventDefault(); // чтобы предотвратить переход по ссылке
+    event.preventDefault();
+    makeActive();
 };
 
 dropdownElement.addEventListener("click", makeActive);
